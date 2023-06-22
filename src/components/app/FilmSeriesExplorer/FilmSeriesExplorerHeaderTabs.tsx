@@ -1,5 +1,4 @@
 import {ReactElement} from "react";
-import getStyle from "../../../utils/getStyle";
 import Tabs, {Tab} from "../../ui-library/composite/Tabs";
 import {OnTabChange} from "../../../types/OnTabChange";
 import {FilmSeries} from "../../../models/FilmSeries";

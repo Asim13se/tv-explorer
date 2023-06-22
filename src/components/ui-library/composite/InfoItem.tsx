@@ -1,6 +1,5 @@
 import {CSSProperties, ReactElement} from "react";
 import Text from "../primitive/Text";
-import Card from "../primitive/Card";
 import Image from "../primitive/Image";
 import SubText from "./SubText";
 import getStyle from "../../../utils/getStyle";
