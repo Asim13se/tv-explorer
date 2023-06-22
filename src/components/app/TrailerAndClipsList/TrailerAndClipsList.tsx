@@ -40,7 +40,7 @@ export default function TrailerAndClipsList(props: TrailerAndClipsListProps): Re
     <CardItemList
       containerStyle={props.containerStyle}
       cardItemList={cardItemList}
-      itemWidth={'70%'}
+      itemWidth={600}
       itemImageHeight={props.itemImageHeight}
       itemHorizontal
       renderItemImageComponent={renderItemImageComponent}
