@@ -34,14 +34,15 @@ const styles = getStyle({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    padding: 16,
+    paddingTop: 16,
+    paddingBottom: 6,
   },
   label: {
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: 'bold',
   },
   icon: {
-    marginInlineStart: 8,
+    marginInlineStart: 12,
     fontSize: 18,
   }
 })

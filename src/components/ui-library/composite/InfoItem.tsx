@@ -54,8 +54,8 @@ const styles = getStyle({
   },
   title: {
     marginTop: 8,
-    fontSize: 28,
-    fontWeight: 'bold',
+    fontSize: 30,
+    fontWeight: '500',
   },
   subText: {
     marginTop: 10,

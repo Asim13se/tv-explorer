@@ -3,16 +3,20 @@ import List, {ListProps} from "../primitive/List";
 import CardItem, {CardItemProps} from "./CardItem";
 import getStyle from "../../../utils/getStyle";
 
-export type CardItemListProps = {
+export type CardItemListProps<T> = {
   children?: ReactElement[] | string | null,
   containerStyle?: ListProps['containerStyle'],
-  cardItemList: CardItemProps[],
+  cardItemList: CardItemProps<T>[],
   horizontal?: ListProps['horizontal'],
   ListHeader?: ListProps['ListHeader'],
   ListFooter?: ListProps['ListFooter'],
+  itemWidth?: CardItemProps<T>['width'],
+  itemImageHeight?: CardItemProps<T>['imageHeight'],
+  itemHorizontal?: CardItemProps<T>['horizontal']
+  renderItemImageComponent?: CardItemProps<T>['renderImageComponent']
 }
 
-export default function CardItemList(props: CardItemListProps): ReactElement {
+export default function CardItemList<T>(props: CardItemListProps<T>): ReactElement {
   return (
     <List
       containerStyle={props.containerStyle}
@@ -27,6 +31,12 @@ export default function CardItemList(props: CardItemListProps): ReactElement {
           title={cardItem.title}
           subTitle={cardItem.subTitle}
           style={props.horizontal ? styles.horizontalMargin : styles.verticalMargin}
+          href={cardItem.href}
+          width={props.itemWidth}
+          imageHeight={props.itemImageHeight}
+          horizontal={props.itemHorizontal}
+          data={cardItem.data}
+          renderImageComponent={props.renderItemImageComponent}
         />
       ))}
     </List>
@@ -39,7 +49,8 @@ const styles = getStyle({
     marginBottom: 10,
   },
   horizontalMargin: {
-    marginLeft: 10,
-    marginRight: 10,
+    marginInlineEnd: 20,
+    marginTop: 8,
+    marginBottom: 8,
   },
 });

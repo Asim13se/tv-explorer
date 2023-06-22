@@ -21,6 +21,7 @@ export default function List(props: ListProps): ReactElement {
         style={{
           display: 'flex',
           flexDirection: props.horizontal ? 'row' : 'column',
+          flexWrap: 'wrap',
           ...(props.listStyle || {}),
         }}
       >
