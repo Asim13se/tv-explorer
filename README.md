@@ -14,6 +14,7 @@ https://asim13se.github.io/tv-explorer/
 The following items are out of scope for this project and has been left out intentionally:
 - Theming
 - i18n
+- Browser navigation events
 - Component optimization using memoization
 - State management
 - RTL support
