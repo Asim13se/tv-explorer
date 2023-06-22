@@ -7,7 +7,7 @@ it is bootstrapped by CRA and written in Typescript without any external librari
 https://asim13se.github.io/tv-explorer/
 ### Screenshots
 
-![screenshot 1](./src/assets/screenshots/screenshot1.png)  |  ![screenshot 2](./src/assets/screenshots/screenshot2.png)
+![screenshot 1](./src/assets/screenshots/screenshot1.png) ![screenshot 2](./src/assets/screenshots/screenshot2.png)
 
 ### Out of scope
 
